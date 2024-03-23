@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+nav {    
+            background-color: #030000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: rgb(148, 181, 247);
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+h1 {
+   
+            text-align: center;
+            background-color: rgb(100, 159, 227);
+            padding: 30px;
+            
+            
+            
+        }
+    text-align: center;
+
+p {
+    text-align: center;
+            padding: 20px;
+            margin-bottom: 50px;
+            margin-left: 475px;
+            margin-right: 475px;
+        
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <h1><b> Contact Us</b></h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="destination.html">Destination</a>
+        <a href="#">Activities</a>
+        <a href="contact_us.html">Contact</a>
+    </nav>
+    <h2>Ready to Start Your Adventure? Contact Us!</h2>
+    <p>Looking for more information about our services or a specific trip? Contact us today! Your next adventure is just a conversation away. Fill out our contact form or give us a call to schedule a complimentary consultation so we can start planning!
+        </p>
+
+<div class="container">
+  
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
