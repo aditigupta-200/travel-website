@@ -3,14 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Form</title>
+    <title>contact us</title>
     <style>
-.container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-}
-nav {    
+
+        nav {    
             background-color: #030000;
             text-align: center;
             padding: 10px;
@@ -27,17 +23,15 @@ nav {
 
         nav a:hover {
             background-color: #777;
+            
         }
-h1 {
+        h1 {
    
             text-align: center;
             background-color: rgb(100, 159, 227);
             padding: 30px;
-            
-            
-            
         }
-    text-align: center;
+        text-align: center;
 
 p {
     text-align: center;
@@ -52,37 +46,70 @@ h2 {
     text-align: center;
 }
 
-.form-group {
-    margin-bottom: 20px;
+
+
+
+
+.content{
+    
+    padding-left: 18%;
+    padding-right: 18%;
+    text-align: center;
+}
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+  font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+textarea,
+input[type="submit"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+input[type="submit"] {
+  align-self: center;
+  width: 50%;
+  max-width: 200px; /* Optional: set a max-width to limit button width */
+  background-color: #0957fe;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+input[type="submit"]:hover {
+  background-color: #010af7;
 }
+
+
 
     </style>
 </head>
@@ -90,31 +117,34 @@ button:hover {
     <h1><b> Contact Us</b></h1>
     <nav>
         <a href="index.html">Home</a>
-        <a href="destination.html">Destination</a>
         <a href="#">Activities</a>
         <a href="contact_us.html">Contact</a>
     </nav>
-    <h2>Ready to Start Your Adventure? Contact Us!</h2>
+    <div class="main-content">
+    <div class="content">
+    <h2>Ready to Start Your Adventure? 
+        Contact Us!</h2>
     <p>Looking for more information about our services or a specific trip? Contact us today! Your next adventure is just a conversation away. Fill out our contact form or give us a call to schedule a complimentary consultation so we can start planning!
         </p>
+    </div>
 
-<div class="container">
-  
-    <form>
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <body>
+        <div class="form-container">
+          
+          <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+      
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+      
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+      
+            <input type="submit" value="Submit" class="submit-container">
+          </form>
         </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-    </form>
+
 </div>
 
 </body>
