@@ -18,7 +18,6 @@
 
   nav{
     margin-top: 2%;
-    
     width: 100%;
     position: absolute;
     top: 0;
@@ -29,6 +28,10 @@
     margin-left: 20px;
     
   }
+
+  nav a:hover {
+    background-color: #010101;
+            }
 
  
 
