@@ -7,37 +7,69 @@ body {
 
 header {
     text-align: center;
-    background-color: rgb(100, 159, 227);
-    font-size: 60px;
-    background-color: rgb(100, 159, 227);
+    text-shadow: 2px 4px 4px rgba(26, 32, 43, 0.6);
+    font-size: 70px;
+    background-color: rgb(34, 198, 198);
     text-align: center;
     font-weight: bold;
     padding: 20px;
 }
 
-nav {    
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #030000;
-    text-align: center;
-    padding: 10px;
+    /* padding: 10px 20px 5px; */
+     /* Top 10px, Right 20px, Bottom 5px, Left 20px */
+}
+
+nav .logo {
+    /* Assuming the logo is an image */
+    width: 70px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Center the navigation items horizontally */
+    flex-grow: 1; /* Allow the navigation items to take up remaining space */
+}
+
+nav ul li {
+    margin-left: 20px;
 }
 
 nav a {
-    display: inline-block;
-    color: rgb(148, 181, 247);
+    color: rgb(84, 236, 241);
     text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
+    padding: 0px 40px;
     font-weight: bold;
 }
 
-nav a:hover {
+nav ul a {
+    color: rgb(84, 236, 241);
+    text-decoration: none;
+    padding: 10px 40px;
+    font-weight: bold;
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+nav ul a:hover {
     background-color: #777;
-            }
+    transform: scale(1.2); /* Increase the size of the navigation items on hover */
+}
+
+
+
+
 
 h1 {
 
     text-align: center;
-    background-color: rgb(100, 159, 227);
+    background-color: rgb(34, 198, 198);
     font-size: 60px;
 }
 
@@ -50,7 +82,9 @@ section {
 h2 {
 color: rgb(6, 7, 10);
 text-shadow: 2px 4px 4px rgba(26, 32, 43, 0.6);
-line-height: 1.5;
+/* line-height: 1.5; */
+margin-top: 2px;
+font-size: 33px;
 }
 
 /* .title {
@@ -66,7 +100,7 @@ line-height: 1.5;
 
 .article {
     text-align: center;
-    background-color: rgb(100, 159, 227);
+    background-color: rgb(34, 198, 198);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -104,6 +138,58 @@ footer {
 .row{
     width: 100%;
    
+}
+
+.video-container {
+    max-width: 400px; /* Set the maximum width for the video container */
+    margin: 0 auto; /* Center the video container */
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container {
+    display: inline-block; /* Display videos inline */
+    margin-right: 10px; /* Add some spacing between videos */
+    vertical-align: top; /* Align videos to the top of the container */
+}
+
+.video-container video {
+    width: 400px; /* Set a fixed width for the videos */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+.video1-container {
+    max-width: 400px; /* Set the maximum width for the video container */
+    margin: 0 auto; /* Center the video container */
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.video1-container {
+    display: inline-block; /* Display videos inline */
+    margin-right: 10px; /* Add some spacing between videos */
+    vertical-align: top; /* Align videos to the top of the container */
+    margin-top: 20px;
+}
+
+.video1-container video {
+    width: 400px; /* Set a fixed width for the videos */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+
+.caption {
+    margin-top: 10px;
+    font-style: italic;
+}
+.read-more {
+    display: block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: underline;
 }
 
 
